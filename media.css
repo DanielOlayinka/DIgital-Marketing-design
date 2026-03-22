@@ -54,6 +54,11 @@
         font-size: 1rem;
     }
 
+    button:hover {
+        transform: translateY(-0.5rem);
+    }
+
+
     .header-top {
         height: 2.5rem;
     }
@@ -93,6 +98,7 @@
         width: 80%;
         padding: 1rem 10%;
         height: 80vh;
+        justify-content: space-between;
     }
 
     .hero article .slogan {
@@ -101,6 +107,12 @@
 
     .hero article {
         gap: 0.5rem;
+        width: 40%;
+        align-items: start;
+    }
+
+    .hero article h1 {
+        text-align: left;
     }
 
     .hero article p {
@@ -118,14 +130,17 @@
         font-size: 1rem
     }
 
+    .hero-right {
+        display: flex;
+    }
+
     .hero-right img:nth-of-type(1) {
         height: 20%;
-        bottom: 22%;
-        left: 3%;
+        bottom: 15%;
+        left: -7%;
     }
 
     .banner ul {
-        padding: 1rem 0;
         font-size: 2rem;
     }
 
@@ -152,6 +167,7 @@
     }
 
     .article-left {
+        display: grid;
         width: 50%;
         grid-template-rows: repeat(2, 15.5rem);
         row-gap: 1rem;
@@ -165,6 +181,10 @@
 
     .rating {
         gap: 0.5rem;
+    }
+
+    .ratings .rating:nth-of-type(4) h1 {
+        width: 52%
     }
 
     .scubscription {
@@ -198,6 +218,10 @@
         gap: 2vw;
     }
 
+    .footer-about {
+        grid-column: 1;
+    }
+
     .footer-list ul {
         gap: 1rem;
     }
@@ -208,6 +232,7 @@
 
     .footer-form {
         gap: 2rem;
+        grid-column: 4;
     }
 
     .footer-form form {

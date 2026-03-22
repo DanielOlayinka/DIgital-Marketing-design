@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-End Challenge</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -65,14 +68,14 @@
           </p>
           <div class="links">
             <button>
-              Explore More <i class="fa-solid fa-arrow-right"></i>
+              Explore More <i class="fa-solid fa-arrow-right floating"></i>
             </button>
             <a href="">View All Services</a>
           </div>
         </article>
         <div class="hero-right">
           <div class="hero-right-wrapper"></div>
-          <img src="assets/Untitled26_20260316204718.png" alt="" />
+          <img src="assets/Untitled26_20260322005024.png" alt="" />
           <img src="assets/Untitled23_20260317182856.png" alt="" />
         </div>
       </div>
@@ -118,7 +121,7 @@
           <div class="article-left">
             <div class="img-top"></div>
             <div class="img-bottom"></div>
-            <img src="assets/Untitled25_20260317182414.png" alt="" />
+            <img src="assets/Untitled25_20260322005635.png" alt="" />
           </div>
           <div class="article-right">
             <p>
@@ -164,7 +167,7 @@
                 </div>
               </div>
             </div>
-            <button>About Us <i class="fa-solid fa-arrow-right"></i></button>
+            <button>About Us <i class="fa-solid fa-arrow-right floating"></i></button>
           </div>
         </article>
         <div class="ratings">
@@ -183,8 +186,8 @@
             <p>Happy Customers</p>
             <img src="assets/Untitled25_20260316201052.png" alt="" />
           </div>
-          <div class="rating" style="border-right: none; align-items: end">
-            <h1 style="width: 52%">16+</h1>
+          <div class="rating">
+            <h1>16+</h1>
             <p>Years of experience</p>
           </div>
         </div>
@@ -301,9 +304,7 @@
             <li><h3>Contacts</h3></li>
             <li>+000 000-0000</li>
             <li>example24@gmail.com</li>
-            <li>
-              No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria
-            </li>
+            <li>No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria</li>
           </ul>
         </div>
         <div class="footer-form">
@@ -311,7 +312,7 @@
           <form>
             <input type="email" name="" id="" placeholder="Email Address" />
             <button type="submit">
-              <i class="fa-solid fa-paper-plane"></i>
+              <i class="fa-solid fa-paper-plane floating"></i>
             </button>
           </form>
         </div>
@@ -326,5 +327,68 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script>
+      const counter = (element, limit, symbol) => {
+        let counter = 0;
+        const intervalTime = 2000 / limit;
+        const interval = setInterval(() => {
+          element.innerText = `${counter}${symbol}`;
+          counter++;
+          if (counter > limit) {
+            clearInterval(interval);
+          }
+        }, intervalTime);
+      };
+
+      const animateGoalsCounter = () => {};
+
+      const ratings = document.querySelectorAll(".rating");
+      const animateRatingsCounter = () => {
+        ratings.forEach((rating, index) => {
+          counter(
+            rating.querySelector("h1"),
+            rating.querySelector("h1").innerText.match(/\d+/),
+            rating.querySelector("h1").innerText.replace(/\d+/g, ""),
+          );
+        });
+      };
+
+      const goalLevelSliders = document.querySelectorAll(".goal-level");
+      goalLevelSliders.forEach((goalLevelSlider, index) => {
+        goalLevelSlider.dataset.index = index + 1;
+      });
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = entry.target.dataset.index;
+            entry.target
+              .querySelector(".goal-level-slider")
+              .classList.add(`load${index}`);
+            entry.target
+              .querySelector(".goal-level-slider-radio")
+              .classList.add(`move-radio${index}`);
+            const goalLevelText = entry.target.querySelector(".goal-level-text");
+            counter(
+              goalLevelText.querySelector("p"),
+              goalLevelText.querySelector("p").innerText.match(/\d+/),
+              goalLevelText.querySelector("p").innerText.replace(/\d+/g, ""),
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateRatingsCounter();
+            observer2.unobserve(entry.target);
+          }
+        });
+      });
+      goalLevelSliders.forEach((goalLevelSlider) =>
+        observer.observe(goalLevelSlider),
+      );
+      ratings.forEach((rating) => observer2.observe(rating));
+    </script>
   </body>
 </html>
