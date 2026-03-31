@@ -1,0 +1,360 @@
+/*  Why Choose Us  */
+
+.why-choose {
+  padding: 0 2rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+}
+
+.semi-choose {
+  background-color: var(--dark-green);
+  color: var(--dark-green);
+}
+
+.choose-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 2rem;
+  margin-top: 5rem;
+}
+
+.why-choose-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.why-choose-head h3 {
+  color: var(--dark-green);
+  font-weight: 600;
+  text-align: center;
+}
+
+.why-h1 {
+  color: var(--dark-green);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  width: 60%;
+}
+
+/*  Main row: images left, cards right  */
+.choose-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 3rem;
+}
+
+/*  Left block: img1 + group  */
+.why-choose-img {
+  display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.choose-img1,
+.choose-img2 {
+  filter: grayscale(100%);
+}
+
+.choose-img1 {
+  height: 26rem;
+  width: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Right sub-group: img2 stacked above the dome */
+.choose-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: space-between;
+}
+
+.choose-img2 {
+  width: 14rem;
+  height: 13rem;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.choose-design {
+  width: 14rem;
+  height: 13rem;
+  object-fit: fill;
+}
+
+/*  Cards grid  */
+.choose-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.choose-card {
+  background-color: var(--dark-green);
+  color: white;
+  padding: 24px;
+  border: none;
+}
+
+.choose-card i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--dark-green);
+  background-color: var(--light-green);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.choose-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1rem;
+}
+
+.choose-card p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+/* alternate card colors */
+.ccard1,
+.ccard4 {
+  background-color: var(--secondary-green);
+}
+
+/*  Tablet (≤ 1024px)  */
+@media (max-width: 1024px) {
+  .why-h1 {
+    width: 80%;
+  }
+
+  .choose-flex {
+    gap: 1.5rem;
+  }
+
+  .choose-img1 {
+    height: 23rem;
+  }
+
+  .choose-img2,
+  .choose-design {
+    width: 12rem;
+    height: 11.5rem;
+  }
+  .choose-card h3{
+    font-size: 13px;
+  }
+  .choose-card p{
+    font-size: 10px;
+  }
+  .choose-card i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--dark-green);
+  background-color: var(--light-green);
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+  .choose-cards {
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .choose-card {
+    padding: 16px;
+  }
+}
+
+/*  Mobile (≤ 768px) ─ */
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 0 1rem;
+  }
+
+  .choose-intro {
+    margin-top: 3rem;
+  }
+
+  .why-h1 {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  /* Stack image block above cards */
+  .choose-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* Image group stays as a row, just smaller */
+  .why-choose-img {
+    gap: 0.5rem;
+  }
+
+  .choose-img1 {
+    height: 16rem;
+  }
+
+  .choose-img2,
+  .choose-design {
+    width: 9rem;
+    height: 7.8rem;
+  }
+
+  /* Cards stretch full width */
+  .choose-cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    border-radius: 0px;
+  }
+
+  .choose-card {
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 2;
+  }
+}
+
+/*  Small Mobile (≤ 480px)  */
+@media (max-width: 480px) {
+  .choose-img1 {
+    height: 18rem;
+    width: 50%;
+  }
+
+  .choose-img2,
+  .choose-design {
+    width: 90%;
+    height: 9rem;
+  }
+
+  .choose-cards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    gap: 10px;
+    border-radius: 0px;
+  }
+
+  .choose-card {
+    align-items: center;
+    padding: 24px;
+    line-height: 3;
+  }
+
+  .choose-card i {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .choose-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .choose-card p {
+    font-size: 0.75rem;
+  }
+}
+
+/*  Keyframes  */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*  Entrance Animations  */
+
+.why-choose-head {
+  animation: fadeUp 0.7s ease both;
+}
+
+.why-choose-img {
+  animation: fadeInLeft 0.8s ease 0.2s both;
+}
+
+.choose-cards {
+  animation: fadeInRight 0.8s ease 0.3s both;
+}
+
+/*  Continuous Float on Dome  */
+
+.choose-design {
+  animation: float 4s ease-in-out infinite;
+}
+
+/*  Hover Effects  */
+
+.choose-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.choose-card i {
+  transition: transform 0.4s ease;
+}
+
+.choose-card:hover i {
+  transform: rotate(15deg) scale(1.15);
+}
