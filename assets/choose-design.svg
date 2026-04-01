@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170">
+  <!-- Dome shape: half circle top, flat bottom -->
+  <path d="M 10 170 L 10 90 Q 10 5, 100 5 Q 190 5, 190 90 L 190 170 Z"
+        fill="#C6F135"
+        stroke="#184D3B"
+        stroke-width="3"/>
+
+  <!-- Squiggly line centered in the dome -->
+  <path d="
+    M 100 30
+    Q 116 42,  100 54
+    Q  84 66,  100 78
+    Q 116 90,  100 102
+    Q  84 114, 100 126
+    Q 116 138, 100 150
+    Q  84 162, 100 168"
+    stroke="#184D3B"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"/>
+</svg>
