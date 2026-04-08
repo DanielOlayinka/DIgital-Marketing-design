@@ -25,30 +25,6 @@
         height: 3rem;
     }
 
-    .logo {
-        height: 2rem;
-    }
-
-    .logo-wrapper {
-        gap: 1rem;
-    }
-
-    .logo-wrapper {
-        width: fit-content;
-    }
-
-    .logo-wrapper h3 {
-        width: 100%;
-    }
-
-    .logo::after {
-        left: 0.5rem;
-    }
-
-    .logo::before {
-        right: 0.5rem;
-    }
-
     button {
         padding: 1rem 2rem;
         font-size: 1rem;
@@ -56,42 +32,6 @@
 
     button:hover {
         transform: translateY(-0.5rem);
-    }
-
-
-    .header-top {
-        height: 2.5rem;
-    }
-
-    .header-top-left {
-        display: flex;
-        gap: 2rem;
-        width: 70%;
-        padding: 0 0 0 5%;
-    }
-
-    .header-top-left .info i {
-        font-size: 1rem;
-    }
-
-    .header-top-right {
-        width: 17%;
-        padding: 0 5% 0 3%;
-        gap: 1.3rem;
-        justify-content: unset;
-    }
-
-    .header-bottom {
-        justify-content: space-evenly;
-        padding: 1rem 0;
-    }
-
-    .header-bottom ul {
-        gap: 3vw;
-    }
-
-    .header-bottom ul li {
-        font-size: 1rem;
     }
 
     .hero {
@@ -138,18 +78,6 @@
         height: 20%;
         bottom: 15%;
         left: -7%;
-    }
-
-    .banner ul {
-        font-size: 2rem;
-    }
-
-    .banner ul li {
-        width: 33vw;
-    }
-
-    .banner ul li p {
-        font-size: 1.6rem;
     }
 
     .about-us {

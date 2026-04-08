@@ -1,21 +1,17 @@
-*,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-:root {
-  --ticker-speed: 18s;
+*{
+  padding: 0;
+  margin: 0;
 }
+
 body {
   background: #fff;
   min-height: 100vh;
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
     color: #142d1f;
 }
 
@@ -28,138 +24,19 @@ body {
   font-weight:600;
 }
 
-.Text-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Ticker Container */
-.ticker-wrapper {
-  width: 100%;
-  max-width: 1800px;
-}
-
-/* Outer glow border  */
-.ticker-outer {
-  background: #1C3D2A;
-  border: 1px solid #004b0896;
-  overflow: hidden;
-  padding: 1px;
-  box-shadow:
-    0 0 0 1px #78f16320,
-    0 4px 32px #63f16d18;
-}
-
-/* Scroll track  */
-.ticker-track {
-  display: flex;
-  align-items: center;
-  height: 56px;
-  overflow: hidden;
-  position: relative;
-  cursor: default;
-}
-
-/*  Fade edges  */
-.ticker-track::before,
-.ticker-track::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 70px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Scrolling belt (two copies for seamless loop) */
-.ticker-content {
-  display: flex;
-  white-space: nowrap;
-  will-change: transform;
-  animation: ticker-scroll var(--ticker-speed) linear infinite;
-}
-
-/* Pause on hover */
-.ticker-track:hover .ticker-content {
-  animation-play-state: paused;
-}
-
-.ticker-segment {
-  display: flex;
-  align-items: center;
-}
-
-/* Individual text items  */
-.ticker-item {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 0 2.2rem;
-  letter-spacing: 0.01em;
-
-  /* Animated gradient text */
-  color: #fff;
-  animation: gradient-shift 4s linear infinite;
-}
-
-/* Separator dot  */
-.ticker-dot {
-  width: 20px;
-  object-fit: contain;
-  color: #C8D84A;
-}
-
-/* Keyframes  */
-
-@keyframes ticker-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Gradient colour sweep across text */
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-/* Responsive*/
-@media (max-width: 480px) {
-  .ticker-item {
-    font-size: 13px;
-    padding: 0 1.4rem;
-  }
-  .ticker-track {
-    height: 48px;
-  }
-}
-
 .box {
   display: flex;
   width: 100%;
   margin: 5rem 0;
   align-items: center;
   justify-content: center;
-  /* background-color: #006305; */
 }
 .work {
   width: 75%;
-  /* background-color: brown */
 }
 .top {
   width: 100%;
-  /* margin: 5rem 2rem; */
-  /* background-color: aqua; */
   display: flex;
-  /* justify-content: center; */
   justify-content: space-between;
 }
 .top h1 {

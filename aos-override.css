@@ -1,0 +1,5 @@
+[data-aos="fade-up"] {
+    transform: translate3d(0, 5px, 0);
+    opacity: 0;
+    transition-property: transform, opacity;
+}

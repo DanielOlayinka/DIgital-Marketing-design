@@ -6,6 +6,7 @@
     <title>Front-End Challenge</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./media.css" />
+    <link rel="stylesheet" href="./global.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./aos-override.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -51,64 +55,51 @@
           <li><a class="nav-link" href="./contact.html">Contact</a></li>
           <li><a class="nav-link" href="./projects.html">Projects</a></li>
         </ul>
-        <button>Get A Odjvnsd</button>
+        <button class="header-button">Get A Odjvnsd</button>
       </div>
     </header>
     <main>
       <div class="hero">
         <article>
-          <div class="slogan">
+          <div class="slogan" data-aos="fade-up">
             <img src="assets/Untitled25_20260316201052.png" alt="" />
             <h3>Elevate Your Brand With Us</h3>
           </div>
-          <h1>Empowering Your Success With Digital Epertise</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-delay="100">Empowering Your Success With Digital Expertise</h1>
+          <p data-aos="fade-up" data-aos-delay="200">
             Eius ea consequatur, exercitationem hic possimus quibusdam
             perspiciatis pariatur consectetur perferendis.
           </p>
-          <div class="links">
+          <div class="links" data-aos="fade">
             <button>
               Explore More <i class="fa-solid fa-arrow-right floating"></i>
             </button>
             <a href="">View All Services</a>
           </div>
         </article>
-        <div class="hero-right">
+        <div class="hero-right" data-aos="fade-left">
           <div class="hero-right-wrapper"></div>
           <img src="assets/Untitled26_20260322005024.png" alt="" />
           <img src="assets/Untitled23_20260317182856.png" alt="" />
         </div>
       </div>
-      <div class="banner">
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-      </div>
+      <section class="Text-slider">
+        <div class="ticker-wrapper">
+          <!-- Text-slider -->
+          <div class="ticker-outer">
+            <div class="ticker-track" id="tickerTrack">
+              <!--
+          Two identical .ticker-segment copies sit side-by-side.
+          The animation scrolls the belt leftward by exactly 50%
+          (one copy's width), then loops creating a seamless repeat.
+          Which builds both copies so a single source of truth array
+          drives the content.
+        -->
+              <div class="ticker-content" class="tickerContent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="about-us">
         <div class="textarea">
           <div class="slogan">
@@ -167,7 +158,9 @@
                 </div>
               </div>
             </div>
-            <button>About Us <i class="fa-solid fa-arrow-right floating"></i></button>
+            <button>
+              About Us <i class="fa-solid fa-arrow-right floating"></i>
+            </button>
           </div>
         </article>
         <div class="ratings">
@@ -192,36 +185,23 @@
           </div>
         </div>
       </div>
-      <div class="banner">
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-      </div>
+      <section class="Text-slider">
+        <div class="ticker-wrapper">
+          <!-- Text-slider -->
+          <div class="ticker-outer">
+            <div class="ticker-track" id="tickerTrack">
+              <!--
+          Two identical .ticker-segment copies sit side-by-side.
+          The animation scrolls the belt leftward by exactly 50%
+          (one copy's width), then loops creating a seamless repeat.
+          Which builds both copies so a single source of truth array
+          drives the content.
+        -->
+              <div class="ticker-content" class="tickerContent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="scubscription" id="subscription">
         <div class="slogan">
           <img src="assets/Untitled25_20260316201052.png" alt="" />
@@ -236,36 +216,23 @@
           <button type="submit">Subscribe</button>
         </form>
       </div>
-      <div class="banner">
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Content Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Social Marketing</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-star-of-life"></i>
-            <p>Search Engineering</p>
-          </li>
-        </ul>
-      </div>
+      <section class="Text-slider">
+        <div class="ticker-wrapper">
+          <!-- Text-slider -->
+          <div class="ticker-outer">
+            <div class="ticker-track" id="tickerTrack">
+              <!--
+          Two identical .ticker-segment copies sit side-by-side.
+          The animation scrolls the belt leftward by exactly 50%
+          (one copy's width), then loops creating a seamless repeat.
+          Which builds both copies so a single source of truth array
+          drives the content.
+        -->
+              <div class="ticker-content" class="tickerContent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-header">
@@ -328,6 +295,9 @@
     </footer>
     <script src="./index.js"></script>
     <script>
+      AOS.init({ once: true });
+    </script>
+    <script>
       const counter = (element, limit, symbol) => {
         let counter = 0;
         const intervalTime = 2000 / limit;
@@ -367,7 +337,8 @@
             entry.target
               .querySelector(".goal-level-slider-radio")
               .classList.add(`move-radio${index}`);
-            const goalLevelText = entry.target.querySelector(".goal-level-text");
+            const goalLevelText =
+              entry.target.querySelector(".goal-level-text");
             counter(
               goalLevelText.querySelector("p"),
               goalLevelText.querySelector("p").innerText.match(/\d+/),
