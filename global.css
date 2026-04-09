@@ -9,6 +9,9 @@
     --bg: #f5f5f5;
     --card-radius: 16px;
     --ticker-speed: 18s;
+    --white: #f5f5f0;
+    --gray-light: #f0f0eb;
+    --gray-border: #e0ddd5;
 }
 
 html {
@@ -422,6 +425,8 @@ header p {
     }
 }
 
+/* Navigation style ends here */
+
 /* Footer style sTarts here */
 footer {
     display: flex;
@@ -436,6 +441,10 @@ footer p {
     font-size: 0.9rem;
     line-height: 1.5;
     color: rgb(170, 170, 170);
+}
+
+footer a{
+    text-decoration: none;
 }
 
 .footer-header {
@@ -508,11 +517,11 @@ footer .logo-wrapper h3 {
 .footer-social a i {
     background-color: var(--dark-green);
     color: var(--light-green);
-    height: 1.2rem;
+    height: 1.3rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 0.9rem;
 }
 
@@ -568,7 +577,7 @@ footer .logo-wrapper h3 {
     background-color: var(--dark-green);
     color: var(--light-green);
     border: none;
-    transition: color 0.2s ease,background-color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
 }
 
@@ -626,6 +635,7 @@ footer .logo-wrapper h3 {
     .footer-header button:hover {
         transform: translateY(-0.5rem);
     }
+
     .footer-header {
         padding: 0 5% 3rem 5%;
     }
