@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -12,16 +12,16 @@
 body {
   background: #fff;
   min-height: 100vh;
-    color: #142d1f;
+  color: #142d1f;
 }
 
-#logo{
+#logo {
   height: 35px;
 }
-.logo-Text{
+.logo-Text {
   display: flex;
   align-items: center;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .box {
@@ -34,10 +34,12 @@ body {
 .work {
   width: 75%;
 }
+
 .top {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 .top h1 {
   width: 30%;
@@ -56,32 +58,20 @@ body {
   padding: 40px 0;
 }
 
-/* ── Fade-up animation ── */
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(36px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Hidden state — applied by JS before cards enter the viewport */
 .card,
 .cards {
   opacity: 0;
   transform: translateY(36px);
 }
-
-/* Visible state — added by the IntersectionObserver */
 .card.is-visible,
 .cards.is-visible {
   animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
-
-/* Card */
 
 .card {
   background: white;
@@ -89,58 +79,48 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.card h3{
-  margin: 0 20px;
-  margin-top: 20px;
+.card h3 {
+  margin: 20px 20px 5px;
   font-size: large;
-  margin-bottom: 5px;
 }
-.card p{
+.card p {
   margin: 0 20px;
 }
-.card div:hover,.card:hover {
+.card div:hover,
+.card:hover {
   box-shadow: 0 8px 20px rgba(21, 130, 2, 0.297);
   transition: ease-in-out 0.2s;
 }
-
-.card div{
+.card div {
   margin-top: 10px;
   display: flex;
   color: #fff;
   padding: 15px 20px;
   justify-content: space-between;
-  background-color: #1C3D2A;
+  background-color: #1c3d2a;
   border-radius: 0 0 10px 10px;
 }
 
-b{
-  font-size: 0.8rem;
-}
+b { font-size: 0.8rem; }
+b:nth-child(2) { color: #c8d84a; }
 
-b:nth-child(2){
-  color: #C8D84A;
-}
-
-.second{
+.second {
   padding: 5rem 7rem;
   text-align: center;
 }
-
-.second p{
+.second p {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
 }
 
-.work-container{
+.work-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
   padding: 40px 115px;
 }
-
-/* Card */
 
 .cards {
   background: #f0faf4;
@@ -151,26 +131,22 @@ b:nth-child(2){
   border: 0.5px solid #1c3d2a4c;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.107);
 }
-.cards hr{
-  border: #1c3d2a4c solid .2px;
+.cards hr {
+  border: #1c3d2a4c solid 0.2px;
 }
-
-.cards img{
+.cards img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  border-radius: 10px ;
+  border-radius: 10px;
 }
-.cards h3{
-  margin: 0 20px;
-  margin-top: 20px;
+.cards h3 {
+  margin: 20px 20px 5px;
   font-size: large;
-  margin-bottom: 5px;
 }
-.cards p{
-  background-color: #1C3D2A;
+.cards p {
+  background-color: #1c3d2a;
   padding: 8px 7px;
   font-weight: 600;
   margin: 10px 0;
@@ -182,8 +158,7 @@ b:nth-child(2){
   box-shadow: 0 8px 20px rgba(21, 130, 2, 0.297);
   transition: ease-in-out 0.2s;
 }
-
-.cards div{
+.cards div {
   margin-top: 10px;
   display: flex;
   gap: 20px;
@@ -191,19 +166,12 @@ b:nth-child(2){
   text-align: left;
   justify-content: space-between;
 }
-
-.cards div h2{
-  width: 85%;
-}
-
-
-.cards div button{
+.cards div h2 { width: 85%; }
+.cards div button {
   font-size: 1.5rem;
-  background-color: #C8D84A;
+  background-color: #c8d84a;
   padding: 10px;
   display: flex;
-  /* top: 20px;
-  bottom: 300px; */
   position: relative;
   text-align: center;
   align-items: center;
@@ -211,32 +179,133 @@ b:nth-child(2){
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color:  #1C3D2A;
+  color: #1c3d2a;
   border: none;
+  flex-shrink: 0; /* ← prevents button squishing */
 }
-.cards span{
+.cards span {
   position: absolute;
   top: 2px;
   bottom: 2px;
   left: 11px;
-  color: #1C3D2A;
+  color: #1c3d2a;
 }
 .cards button:hover {
-  background-color: #1C3D2A;
+  background-color: #1c3d2a;
   transition: ease-in-out 0.2s;
 }
-.cards button:hover span{
-  color: #C8D84A;
+.cards button:hover span {
+  color: #c8d84a;
   transition: ease-in-out 0.2s;
 }
-.buttons{
-  background-color: transparent;
-  border: 1px solid #1C3D2A;
+
+.buttons {
+  border: 1px solid #1c3d2a;
   padding: 10px 20px;
   font-weight: 600;
   color: #fff;
-  background-color: #1C3D2A;
+  background-color: #1c3d2a;
   border-radius: 20px;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablet — up to 1024px */
+@media (max-width: 1024px) {
+  .work {
+    width: 88%;
+  }
+
+  .second {
+    padding: 4rem 3rem;
+  }
+
+  .work-container {
+    padding: 40px 40px;
+  }
+}
+
+/* Small tablet / large phone — up to 768px */
+@media (max-width: 768px) {
+  .box {
+    margin: 3rem 0;
+  }
+
+  .work {
+    width: 92%;
+  }
+
+  /* Stack heading + paragraph vertically */
+  .top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .top h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .top p {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .second {
+    padding: 3rem 1.5rem;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px 20px;
+  }
+}
+
+/* Phone — up to 480px */
+@media (max-width: 480px) {
+  .box {
+    margin: 2rem 0;
+  }
+
+  .work {
+    width: 95%;
+  }
+
+  .top h1 {
+    font-size: 1.6rem;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .second {
+    padding: 2rem 1rem;
+  }
+
+  .work-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 16px;
+  }
+
+  /* Wider tap target on mobile */
+  .cards div button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .buttons {
+    width: 100%;
+    text-align: center;
+  }
 }
