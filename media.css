@@ -30,10 +30,6 @@
         font-size: 1rem;
     }
 
-    button:hover {
-        transform: translateY(-0.5rem);
-    }
-
     .hero {
         width: 80%;
         padding: 1rem 10%;
@@ -67,7 +63,7 @@
         align-items: center;
     }
 
-    .hero .links a {
+    .hero .links a:nth-child(2){
         font-size: 1rem
     }
 

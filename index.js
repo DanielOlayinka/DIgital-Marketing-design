@@ -1,15 +1,31 @@
 const links = document.querySelectorAll(".nav-link");
-let current = window.location.pathname;
 
-if (current.endsWith("/")) {
-  current += "index.html";
-}
+
+function onclickMenu(menuBtn) {
+  if (menuBtn.classList.contains("active")) {
+    menuBtn.classList.remove("active");
+    document.getElementById("mobile-nav").classList.remove("active")
+  } else {
+    menuBtn.classList.add("active");
+    document.getElementById("mobile-nav").classList.add("active")
+  }
+};
+
+const currentPath = window.location.pathname
+  .replace(/\/$/, "")
+  .toLowerCase();
 
 links.forEach((link) => {
-  if (link.getAttribute("href") === `./${current.split("/").pop()}`) {
+  const linkPath = new URL(link.href, window.location.origin).pathname
+    .replace(/\/$/, "")
+    .toLowerCase();
+
+  if (linkPath === currentPath) {
     link.classList.add("active");
   }
 });
+
+
 window.onbeforeunload = () => window.scrollTo(0, 0);
 const ITEMS = [
   "Content Marketing",

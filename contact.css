@@ -1,47 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-
-
-:root {
-  --green-dark:   #1b3a2a;
-  --green-mid:    #2a5a3c;
-  --green-accent: #c8e63c;
-  --white:        #f5f5f0;
-  --gray-light:   #f0f0eb;
-  --gray-border:  #e0ddd5;
-  --text-dark:    #1a1a18;
-  --text-muted:   #6b7c72;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-  font-family: 'DM Sans', sans-serif;
   background: var(--white);
   color: var(--text-dark);
-  /* width: 100%; */
   margin: 0;
 }
 
 /* ── AWARDS SECTION ── */
-body > section:first-of-type {
-  background: var(--green-dark);
+body>section:first-of-type {
+  background: var(--dark-green);
   padding: 64px 6%;
   position: relative;
   overflow: hidden;
 }
 
- body > section:first-of-type::before {
+body>section:first-of-type::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 15% 50%, rgba(200,230,60,0.07) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 15% 50%, rgba(200, 230, 60, 0.07) 0%, transparent 60%);
   pointer-events: none;
 }
 
 
 
 /* "Our Award" tag */
-body > section:first-of-type > p {
+body>section:first-of-type>p {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -54,29 +41,28 @@ body > section:first-of-type > p {
 }
 
 
-body > section:first-of-type > p::before{
+body>section:first-of-type>p::before {
   display: inline-block;
-  content:'';  
+  content: '';
   width: 20px;
   height: 10px;
   border-radius: 50%;
-  background: var(--green-accent);
+  background: var(--accent-color);
 }
 
 
-body > section:first-of-type > p::after {
+body>section:first-of-type>p::after {
   content: '';
   display: inline-block;
   width: 10px;
   height: 20px;
   border-radius: 50%;
-  background: var(--green-accent);
+  background: var(--accent-color);
   margin-left: -4px;
 }
 
 /* Heading */
-body > section:first-of-type > h1 {
-  font-family: 'Playfair Display', serif;
+body>section:first-of-type>h1 {
   font-size: clamp(28px, 3.5vw, 44px);
   font-weight: 800;
   color: var(--white);
@@ -86,29 +72,29 @@ body > section:first-of-type > h1 {
 }
 
 /* Awards table */
-body > section:first-of-type table {
+body>section:first-of-type table {
   border-collapse: collapse;
   width: 100%;
   max-width: 580px;
   border: none;
 }
 
-body > section:first-of-type table tr {
+body>section:first-of-type table tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-body > section:first-of-type table tr:hover {
+body>section:first-of-type table tr:hover {
   background: rgba(255, 255, 255, 0.04);
 }
 
-body > section:first-of-type table td {
+body>section:first-of-type table td {
   border: none;
   padding: 18px 12px;
   vertical-align: middle;
 }
 
 /* Category label (small) */
-body > section:first-of-type table small {
+body>section:first-of-type table small {
   display: block;
   font-size: 11px;
   font-weight: 500;
@@ -119,15 +105,14 @@ body > section:first-of-type table small {
 }
 
 /* Award name (strong) */
-body > section:first-of-type table strong {
-  font-family: 'Playfair Display', serif;
+body>section:first-of-type table strong {
   font-size: 17px;
   font-weight: 700;
   color: var(--white);
 }
 
 /* Year cell */
-body > section:first-of-type table td:nth-child(2) {
+body>section:first-of-type table td:nth-child(2) {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.38);
   white-space: nowrap;
@@ -135,12 +120,12 @@ body > section:first-of-type table td:nth-child(2) {
 }
 
 /* Arrow link cell */
-body > section:first-of-type table td:last-child {
+body>section:first-of-type table td:last-child {
   text-align: right;
   width: 50px;
 }
 
-body > section:first-of-type table a {
+body>section:first-of-type table a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -154,20 +139,20 @@ body > section:first-of-type table a {
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
-body > section:first-of-type table a:hover {
-  background: var(--green-accent);
-  border-color: var(--green-accent);
-  color: var(--green-dark);
+body>section:first-of-type table a:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--dark-green);
 }
 
 /* ── CONTACT SECTION ── */
-body > section:last-of-type {
+body>section:last-of-type {
   background: var(--white);
   padding: 80px 6% 96px;
 }
 
 /* "Contact Us" tag */
-body > section:last-of-type > p {
+body>section:last-of-type>p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,17 +165,17 @@ body > section:last-of-type > p {
   margin-bottom: 14px;
 }
 
-body > section:last-of-type > p::before {
+body>section:last-of-type>p::before {
   content: '';
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--green-accent);
+  background: var(--accent-color);
   border: 2px solid var(--text-dark);
 }
 
-body > section:last-of-type > p::after {
+body>section:last-of-type>p::after {
   content: '';
   display: inline-block;
   width: 10px;
@@ -201,8 +186,7 @@ body > section:last-of-type > p::after {
 }
 
 /* Heading */
-body > section:last-of-type > h2 {
-  font-family: 'Playfair Display', serif;
+body>section:last-of-type>h2 {
   font-size: clamp(26px, 3.5vw, 40px);
   font-weight: 800;
   color: var(--text-dark);
@@ -211,7 +195,7 @@ body > section:last-of-type > h2 {
 }
 
 /* Form layout */
-body > section:last-of-type form {
+body>section:last-of-type form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -219,12 +203,12 @@ body > section:last-of-type form {
   margin: 0 auto;
 }
 
-body > section:last-of-type form br {
+body>section:last-of-type form br {
   display: none;
 }
 
 /* Labels */
-body > section:last-of-type form label {
+body>section:last-of-type form label {
   display: block;
   font-size: 13px;
   font-weight: 500;
@@ -233,12 +217,12 @@ body > section:last-of-type form label {
 }
 
 /* Inputs, select, textarea */
-body > section:last-of-type form input[type="text"],
-body > section:last-of-type form input[type="email"],
-body > section:last-of-type form input[type="tel"],
-body > section:last-of-type form select,
-body > section:last-of-type form textarea {
-  width: 100%;
+body>section:last-of-type form input[type="text"],
+body>section:last-of-type form input[type="email"],
+body>section:last-of-type form input[type="tel"],
+body>section:last-of-type form select,
+body>section:last-of-type form textarea {
+  width: calc(100% -28px);
   padding: 11px 14px;
   border: 1.5px solid var(--gray-border);
   border-radius: 8px;
@@ -252,69 +236,77 @@ body > section:last-of-type form textarea {
   -webkit-appearance: none;
 }
 
-body > section:last-of-type form input::placeholder,
-body > section:last-of-type form textarea::placeholder {
+body>section:last-of-type form input::placeholder,
+body>section:last-of-type form textarea::placeholder {
   color: #aab4ae;
 }
 
-body > section:last-of-type form input:focus,
-body > section:last-of-type form select:focus,
-body > section:last-of-type form textarea:focus {
+body>section:last-of-type form input:focus,
+body>section:last-of-type form select:focus,
+body>section:last-of-type form textarea:focus {
   border-color: var(--green-mid);
   background: #fff;
 }
 
 /* Textarea full width */
-body > section:last-of-type form textarea {
+body>section:last-of-type form textarea {
   grid-column: 1 / -1;
   resize: none;
   height: 110px;
 }
 
 /* Labels that should span full width */
-body > section:last-of-type form label[for="message"] {
+body>section:last-of-type form label[for="message"] {
   grid-column: 1 / -1;
 }
 
 /* Submit button */
-body > section:last-of-type form input[type="submit"] {
+body>section:last-of-type form input[type="submit"] {
   grid-column: 1 / -1;
   justify-self: start;
-  background: var(--green-dark);
-  color: var(--white);
+  background: var(--dark-green);
+  color: var(--accent-color);
   border: none;
-  border-radius: 8px;
-  padding: 13px 28px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  border-radius: 35px;
+  padding: 0.8rem 1rem;
+  font-size: 0.7rem;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s ease, color 0.2s ease;
   width: auto;
 }
 
-body > section:last-of-type form input[type="submit"]:hover {
-  background: var(--green-mid);
+body>section:last-of-type form input[type="submit"]:hover {
+  background: var(--accent-color);
+  color: var(--dark-green);
+  box-shadow: 1px 1px 5px var(--text-body);
   transform: translateY(-2px);
 }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
-  body > section:first-of-type,
-  body > section:last-of-type {
+
+  body>section:first-of-type,
+  body>section:last-of-type {
     padding: 48px 5%;
   }
 
-  body > section:last-of-type form {
+  body>section:last-of-type form {
     grid-template-columns: 1fr;
   }
 
-  body > section:last-of-type form label[for="message"] {
+  body>section:last-of-type form label[for="message"] {
     grid-column: 1;
   }
 
-  body > section:last-of-type form textarea,
-  body > section:last-of-type form input[type="submit"] {
+  body>section:last-of-type form textarea,
+  body>section:last-of-type form input[type="submit"] {
     grid-column: 1;
+  }
+}
+
+@media (min-width: 890px) {
+  body>section:last-of-type form input[type="submit"] {
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }

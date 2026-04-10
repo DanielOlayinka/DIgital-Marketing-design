@@ -1,463 +1,468 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./services.css" />
-    <link rel="stylesheet" href="./why-choose.css" />
-    <link rel="stylesheet" href="./faq.css" />
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <title>Digital marketing</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="header-top-left">
-          <div class="info">
-            <i class="fa-solid fa-phone"></i>
-            <p>+000 000-0000</p>
-          </div>
-          <div class="info">
-            <i class="fa-solid fa-envelope"></i>
-            <p>example24@gmail.com</p>
-          </div>
-          <div class="info">
-            <i class="fa-solid fa-location-pin"></i>
-            <p>No. 8 Adebayo Close, Garki, FCT 900001, Nigeria</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./services.css" />
+  <link rel="stylesheet" href="./why-choose.css" />
+  <link rel="stylesheet" href="./faq.css" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="shortcut icon" href="./assets/Untitled25_20260316201052.png" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Digital marketing</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+          <p>+000 000-0000</p>
         </div>
-        <div class="header-top-right">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-youtube"></i>
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <p>example24@gmail.com</p>
+        </div>
+        <div class="info">
+          <i class="fa-solid fa-location-pin"></i>
+          <p>No. 8 Adebayo Close, Garki, FCT 900001, Nigeria</p>
         </div>
       </div>
-      <div class="header-bottom">
-        <div class="logo-wrapper">
-          <div class="logo"></div>
-          <h3>Digital Marketing</h3>
-        </div>
-        <ul>
-          <li><a class="nav-link" href="./index.html">Home</a></li>
-          <li><a class="nav-link" href="./services.html">Services</a></li>
-          <li><a class="nav-link" href="./contact.html">Contact</a></li>
-          <li><a class="nav-link" href="./projects.html">Projects</a></li>
-        </ul>
+      <div class="header-top-right">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="logo-wrapper">
+        <div class="logo"></div>
+        <h3>Digital Marketing</h3>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="./">Home</a></li>
+        <li><a class="nav-link" href="./services.html">Services</a></li>
+        <li><a class="nav-link" href="./contact.html">Contact</a></li>
+        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+      </ul>
+
+      <div class="header-bottom-right">
         <button class="header-button">Get A Odjvnsd</button>
+  
+        <div class="menu-btn" id="menuBtn" onclick="onclickMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </header>
-    <main>
-      <!------------------------------------------ hero section -------------------------------------------------------->
-      <section class="hero-section">
-        <div class="slanted-lines"></div>
-        <div class="hero">
-          <div class="hero-head">
-            <div class="small-icon">
-              <div class="cir"></div>
-              <div class="semi"></div>
-            </div>
-            <h2>Our Services</h2>
+    </div>
+    <div class="header-mobile-nav-wrapper">
+      <div class="header-mobile-nav" id="mobile-nav">
+        <ul>
+          <li><a class="nav-link mobile" href="./">Home</a></li>
+          <li><a class="nav-link mobile" href="./services.html">Services</a></li>
+          <li><a class="nav-link mobile" href="./contact.html">Contact</a></li>
+          <li><a class="nav-link mobile" href="./projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!------------------------------------------ hero section -------------------------------------------------------->
+    <section class="hero-section">
+      <div class="slanted-lines"></div>
+      <div class="hero">
+        <div class="hero-head">
+          <div class="small-icon">
+            <div class="cir"></div>
+            <div class="semi"></div>
           </div>
-          <div class="head-ban">
-            <h1>Boost Your Brand with Our Expertise</h1>
-            <div>
-              <button class="service-button">view All Services →</button>
+          <h2>Our Services</h2>
+        </div>
+        <div class="head-ban">
+          <h1>Boost Your Brand with Our Expertise</h1>
+          <div>
+            <button class="service-button">view All Services →</button>
+          </div>
+        </div>
+        <div class="service-cards">
+          <div class="service-card">
+            <img class="service-card-img" src="./assets/services1.webp" alt="" />
+            <div class="service-card-text">
+              <h3>Social Media Marketing</h3>
+              <p class="text-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium distinctio aspernatur sint laborum.
+              </p>
+              <p class="learn-more">Learn more →</p>
             </div>
           </div>
-          <div class="service-cards">
-            <div class="service-card">
-              <img
-                class="service-card-img"
-                src="./assets/services1.webp"
-                alt=""
-              />
-              <div class="service-card-text">
-                <h3>Social Media Marketing</h3>
-                <p class="text-p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium distinctio aspernatur sint laborum.
-                </p>
-                <p class="learn-more">Learn more →</p>
-              </div>
+          <div class="service-card">
+            <img class="service-card-img" src="./assets/services2.webp" alt="" />
+            <div class="service-card-text">
+              <h3>Content Marketing</h3>
+              <p class="text-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum praesentium, voluptatum quam molestias.
+              </p>
+              <p class="learn-more">Learn more →</p>
             </div>
-            <div class="service-card">
-              <img
-                class="service-card-img"
-                src="./assets/services2.webp"
-                alt=""
-              />
-              <div class="service-card-text">
-                <h3>Content Marketing</h3>
-                <p class="text-p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum praesentium, voluptatum quam molestias.
-                </p>
-                <p class="learn-more">Learn more →</p>
-              </div>
-            </div>
-            <div class="service-card">
-              <img
-                class="service-card-img"
-                src="./assets/services3.webp"
-                alt=""
-              />
-              <div class="service-card-text">
-                <h3>Email Marketing</h3>
-                <p class="text-p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas harum quidem quam? Magnam perferendis.
-                </p>
-                <p class="learn-more"><span>Learn more →</span></p>
-              </div>
+          </div>
+          <div class="service-card">
+            <img class="service-card-img" src="./assets/services3.webp" alt="" />
+            <div class="service-card-text">
+              <h3>Email Marketing</h3>
+              <p class="text-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas harum quidem quam? Magnam perferendis.
+              </p>
+              <p class="learn-more"><span>Learn more →</span></p>
             </div>
           </div>
         </div>
-        <div class="slanted-lines"></div>
-      </section>
+      </div>
+      <div class="slanted-lines"></div>
+    </section>
 
-      <!--------------------------------------------- that why choose section ----------------------------------------------------------- -->
-      <section class="why-choose">
-        <div class="why-choose-head">
-          <div class="choose-intro">
+    <!--------------------------------------------- that why choose section ----------------------------------------------------------- -->
+    <section class="why-choose">
+      <div class="why-choose-head">
+        <div class="choose-intro">
+          <div class="small-icon">
+            <div class="cir"></div>
+            <div class="semi semi-choose"></div>
+          </div>
+          <h3>Why Choose Us</h3>
+        </div>
+        <div class="why-h1">
+          <h1>Why Our Clients Believe We're Different</h1>
+        </div>
+      </div>
+      <div class="choose-flex">
+        <div class="why-choose-img">
+          <img class="choose-img1" src="./assets/whychoose1.webp" alt="" />
+          <div class="choose-group">
+            <img class="choose-img2" src="./assets/whychoose2.webp" alt="" />
+            <img class="choose-design" src="./assets/choose-design.svg" alt="" />
+          </div>
+        </div>
+        <div class="choose-cards">
+          <div class="choose-card ccard1">
+            <i class="fa-solid fa-user-group"></i>
+            <h3>Certified Experts</h3>
+            <p>
+              Our team of experts has years of experience in the industry,
+              ensuring that your brand is in capable hands.
+            </p>
+          </div>
+          <div class="choose-card ccard2">
+            <i class="fa-solid fa-square-poll-vertical"></i>
+            <h3>Proven Results</h3>
+            <p>
+              We understand that every brand is unique, which is why we tailor
+              our strategies.
+            </p>
+          </div>
+          <div class="choose-card ccard3">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Award Winning</h3>
+            <p>
+              We have a track record of delivering measurable results for our
+              clients, helping them achieve.
+            </p>
+          </div>
+          <div class="choose-card ccard4">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Transparent Reporting</h3>
+            <p>
+              We have a track record of delivering measurable results for our
+              clients, helping them achieve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- the sliding tag before and after the faq section  -->
+
+    <section class="Text-slider">
+      <div class="ticker-wrapper">
+        <!-- Text-slider -->
+        <div class="ticker-outer">
+          <div class="ticker-track" id="tickerTrack">
+            <!--
+          Two identical .ticker-segment copies sit side-by-side.
+          The animation scrolls the belt leftward by exactly 50%
+          (one copy's width), then loops creating a seamless repeat.
+          Which builds both copies so a single source of truth array
+          drives the content.
+        -->
+            <div class="ticker-content" class="tickerContent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------- FAQ section -------------------------------------------------- -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <!-- Header -->
+        <div class="faq-header">
+          <div class="faq-label">
             <div class="small-icon">
               <div class="cir"></div>
               <div class="semi semi-choose"></div>
             </div>
-            <h3>Why Choose Us</h3>
+            <span>FAQs</span>
           </div>
-          <div class="why-h1">
-            <h1>Why Our Clients Believe We're Different</h1>
-          </div>
+          <h1>Question? Look here.</h1>
         </div>
-        <div class="choose-flex">
-          <div class="why-choose-img">
-            <img class="choose-img1" src="./assets/whychoose1.webp" alt="" />
-            <div class="choose-group">
-              <img class="choose-img2" src="./assets/whychoose2.webp" alt="" />
-              <img
-                class="choose-design"
-                src="./assets/choose-design.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="choose-cards">
-            <div class="choose-card ccard1">
-              <i class="fa-solid fa-user-group"></i>
-              <h3>Certified Experts</h3>
-              <p>
-                Our team of experts has years of experience in the industry,
-                ensuring that your brand is in capable hands.
-              </p>
-            </div>
-            <div class="choose-card ccard2">
-              <i class="fa-solid fa-square-poll-vertical"></i>
-              <h3>Proven Results</h3>
-              <p>
-                We understand that every brand is unique, which is why we tailor
-                our strategies.
-              </p>
-            </div>
-            <div class="choose-card ccard3">
-              <i class="fa-solid fa-trophy"></i>
-              <h3>Award Winning</h3>
-              <p>
-                We have a track record of delivering measurable results for our
-                clients, helping them achieve.
-              </p>
-            </div>
-            <div class="choose-card ccard4">
-              <i class="fa-solid fa-chart-line"></i>
-              <h3>Transparent Reporting</h3>
-              <p>
-                We have a track record of delivering measurable results for our
-                clients, helping them achieve.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- the sliding tag before and after the faq section  -->
-
-      <section class="Text-slider">
-        <div class="ticker-wrapper">
-          <!-- Text-slider -->
-          <div class="ticker-outer">
-            <div class="ticker-track" id="tickerTrack">
-              <!--
-          Two identical .ticker-segment copies sit side-by-side.
-          The animation scrolls the belt leftward by exactly 50%
-          (one copy's width), then loops creating a seamless repeat.
-          Which builds both copies so a single source of truth array
-          drives the content.
-        -->
-              <div class="ticker-content" class="tickerContent"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-------------------- FAQ section -------------------------------------------------- -->
-      <section class="faq-section">
-        <div class="faq-container">
-          <!-- Header -->
-          <div class="faq-header">
-            <div class="faq-label">
-              <div class="small-icon">
-                <div class="cir"></div>
-                <div class="semi semi-choose"></div>
-              </div>
-              <span>FAQs</span>
-            </div>
-            <h1>Question? Look here.</h1>
-          </div>
-
-          <!-- Body: accordion + sidebar -->
-          <div class="faq-body">
-            <!-- Accordion -->
-            <div class="faq-accordion">
-              <div class="faq-item">
-                <button class="faq-question">
-                  <span>What digital marketing services do you offer?</span>
-                  <i class="fa-solid fa-plus faq-icon"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    We offer a wide range of digital marketing services
-                    including social media marketing, content marketing, SEO,
-                    email marketing, PPC advertising, and more tailored to your
-                    brand's needs.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item active">
-                <button class="faq-question">
-                  <span>What industries do you specialize in?</span>
-                  <i class="fa-solid fa-minus faq-icon"></i>
-                </button>
-                <div class="faq-answer open">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua eiusmod tempor incididunt ut labore...
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">
-                  <span>What digital marketing services do you offer?</span>
-                  <i class="fa-solid fa-plus faq-icon"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    We offer comprehensive digital marketing solutions including
-                    brand strategy, social media management, content creation,
-                    and performance analytics.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">
-                  <span>How much do your digital marketing services cost?</span>
-                  <i class="fa-solid fa-plus faq-icon"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    Our pricing varies based on the scope and scale of your
-                    project. We offer flexible packages to suit businesses of
-                    all sizes. Contact us for a custom quote.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">
-                  <span>Can I review content before it's published?</span>
-                  <i class="fa-solid fa-plus faq-icon"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    Absolutely! We have a thorough review process where you get
-                    to approve all content before it goes live. Your brand voice
-                    is always our priority.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">
-                  <span>Is there a minimum contract period?</span>
-                  <i class="fa-solid fa-plus faq-icon"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    We offer both short-term and long-term engagements. While we
-                    recommend a minimum of 3 months to see meaningful results,
-                    we are flexible based on your needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="faq-sidebar">
-              <!-- Contact card -->
-              <div class="faq-contact-card">
-                <div class="faq-chat-icon">
-                  <i class="fa-solid fa-comments"></i>
-                </div>
-                <h3>You have different questions?</h3>
+        <!-- Body: accordion + sidebar -->
+        <div class="faq-body">
+          <!-- Accordion -->
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What digital marketing services do you offer?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+              </button>
+              <div class="faq-answer">
                 <p>
-                  Our team will answer all your questions. We ensure a quick
-                  response.
+                  We offer a wide range of digital marketing services
+                  including social media marketing, content marketing, SEO,
+                  email marketing, PPC advertising, and more tailored to your
+                  brand's needs.
                 </p>
-                <button class="faq-contact-btn">Contact Us</button>
               </div>
+            </div>
 
-              <!-- Service card -->
-              <div class="faq-service-card">
-                <div class="faq-service-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="faq-service-text">
-                  <span class="faq-service-label"
-                    >Your Growth, Our Mission</span
-                  >
-                  <h4>24/7 Service</h4>
-                  <span class="faq-service-phone">(000) 000-0000</span>
-                </div>
+            <div class="faq-item active">
+              <button class="faq-question">
+                <span>What industries do you specialize in?</span>
+                <i class="fa-solid fa-minus faq-icon"></i>
+              </button>
+              <div class="faq-answer open">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua eiusmod tempor incididunt ut labore...
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What digital marketing services do you offer?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We offer comprehensive digital marketing solutions including
+                  brand strategy, social media management, content creation,
+                  and performance analytics.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How much do your digital marketing services cost?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our pricing varies based on the scope and scale of your
+                  project. We offer flexible packages to suit businesses of
+                  all sizes. Contact us for a custom quote.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can I review content before it's published?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Absolutely! We have a thorough review process where you get
+                  to approve all content before it goes live. Your brand voice
+                  is always our priority.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Is there a minimum contract period?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We offer both short-term and long-term engagements. While we
+                  recommend a minimum of 3 months to see meaningful results,
+                  we are flexible based on your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="faq-sidebar">
+            <!-- Contact card -->
+            <div class="faq-contact-card">
+              <div class="faq-chat-icon">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <h3>You have different questions?</h3>
+              <p>
+                Our team will answer all your questions. We ensure a quick
+                response.
+              </p>
+              <button class="faq-contact-btn">Contact Us</button>
+            </div>
+
+            <!-- Service card -->
+            <div class="faq-service-card">
+              <div class="faq-service-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="faq-service-text">
+                <span class="faq-service-label">Your Growth, Our Mission</span>
+                <h4>24/7 Service</h4>
+                <span class="faq-service-phone">(000) 000-0000</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="Text-slider">
-        <div class="ticker-wrapper">
-          <!-- Text-slider -->
-          <div class="ticker-outer">
-            <div class="ticker-track" id="tickerTrack">
-              <!--
+      </div>
+    </section>
+    <section class="Text-slider">
+      <div class="ticker-wrapper">
+        <!-- Text-slider -->
+        <div class="ticker-outer">
+          <div class="ticker-track" id="tickerTrack">
+            <!--
           Two identical .ticker-segment copies sit side-by-side.
           The animation scrolls the belt leftward by exactly 50%
           (one copy's width), then loops creating a seamless repeat.
           Which builds both copies so a single source of truth array
           drives the content.
         -->
-              <div class="ticker-content" class="tickerContent"></div>
-            </div>
+            <div class="ticker-content" class="tickerContent"></div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-header">
-        <h1>Let's Connect there</h1>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-header">
+      <h1>Let's Connect there</h1>
+      <a href="./contact.html">
         <button>Contact Us</button>
-      </div>
-      <div class="footer-wrapper">
-        <div class="footer-about">
-          <div class="logo-wrapper">
-            <div class="logo"></div>
-            <h3>Digital Marketing</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-            minus, doloremque neque ipsam porro.
-          </p>
-          <div class="footer-social">
-            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a
-            ><a href=""> <i class="fa-brands fa-x-twitter"></i> </a
-            ><a href=""> <i class="fa-brands fa-instagram"></i> </a
-            ><a href=""> <i class="fa-brands fa-tiktok"></i> </a
-            ><a href=""> <i class="fa-brands fa-youtube"></i> </a>
-          </div>
+      </a>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer-about">
+        <div class="logo-wrapper">
+          <div class="logo"></div>
+          <h3>Digital Marketing</h3>
         </div>
-        <div class="footer-links footer-list">
-          <ul>
-            <li><h3>Navigation</h3></li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-          </ul>
-        </div>
-        <div class="footer-contacts footer-list">
-          <ul>
-            <li><h3>Contacts</h3></li>
-            <li>+000 000-0000</li>
-            <li>example24@gmail.com</li>
-            <li>No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria</li>
-          </ul>
-        </div>
-        <div class="footer-form">
-          <h3>Get the latest information</h3>
-          <form>
-            <input type="email" name="" id="" placeholder="Email Address" />
-            <button type="submit">
-              <i class="fa-solid fa-paper-plane floating"></i>
-            </button>
-          </form>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+          minus, doloremque neque ipsam porro.
+        </p>
+        <div class="footer-social">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a><a href=""> <i class="fa-brands fa-x-twitter"></i>
+          </a><a href=""> <i class="fa-brands fa-instagram"></i> </a><a href=""> <i class="fa-brands fa-tiktok"></i>
+          </a><a href=""> <i class="fa-brands fa-youtube"></i> </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <p>Copyright @2025 Digital Marketing Company. All Rights Reserved</p>
-        </div>
-        <div class="footer-bottom-right">
-          <p>User Terms & Conditions | Privacy Policy</p>
-        </div>
+      <div class="footer-links footer-list">
+        <ul>
+          <li>
+            <h3>Navigation</h3>
+          </li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-contacts footer-list">
+        <ul>
+          <li>
+            <h3>Contacts</h3>
+          </li>
+          <li>+000 000-0000</li>
+          <li>example24@gmail.com</li>
+          <li>No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria</li>
+        </ul>
+      </div>
+      <div class="footer-form">
+        <h3>Get the latest information</h3>
+        <form>
+          <input type="email" name="" id="" placeholder="Email Address" />
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane floating"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>Copyright @2025 Digital Marketing Company. All Rights Reserved</p>
+      </div>
+      <div class="footer-bottom-right">
+        <p>User Terms & Conditions | Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+</body>
 
-  <!------------------------------------ the javascript for the faq accordion------------------------------------------>
+<!------------------------------------ the javascript for the faq accordion------------------------------------------>
 
-  <script>
-    document.querySelectorAll(".faq-item").forEach((item) => {
-      const btn = item.querySelector(".faq-question");
-      const answer = item.querySelector(".faq-answer");
-      const icon = item.querySelector(".faq-icon");
+<script>
+  document.querySelectorAll(".faq-item").forEach((item) => {
+    const btn = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const icon = item.querySelector(".faq-icon");
 
-      btn.addEventListener("click", () => {
-        const isOpen = item.classList.contains("active");
+    btn.addEventListener("click", () => {
+      const isOpen = item.classList.contains("active");
 
-        // Close all
-        document.querySelectorAll(".faq-item").forEach((el) => {
-          el.classList.remove("active");
-          el.querySelector(".faq-answer").classList.remove("open");
-          el.querySelector(".faq-icon").classList.replace(
-            "fa-minus",
-            "fa-plus",
-          );
-        });
-
-        // Open clicked if it was closed
-        if (!isOpen) {
-          item.classList.add("active");
-          answer.classList.add("open");
-          icon.classList.replace("fa-plus", "fa-minus");
-        }
+      // Close all
+      document.querySelectorAll(".faq-item").forEach((el) => {
+        el.classList.remove("active");
+        el.querySelector(".faq-answer").classList.remove("open");
+        el.querySelector(".faq-icon").classList.replace(
+          "fa-minus",
+          "fa-plus",
+        );
       });
-    });
 
-    document.querySelectorAll(".faq-track").forEach((item) => {
-      item.innerHTML = `
+      // Open clicked if it was closed
+      if (!isOpen) {
+        item.classList.add("active");
+        answer.classList.add("open");
+        icon.classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  });
+
+  document.querySelectorAll(".faq-track").forEach((item) => {
+    item.innerHTML = `
     <i class="fa-solid fa-star-of-life"></i>
     <h4>Content Writing</h4>
 
@@ -495,7 +500,8 @@
     <h4>Search Engine Optimization</h4>
     
     `;
-    });
-  </script>
-  <script src="./index.js"></script>
+  });
+</script>
+<script src="./index.js"></script>
+
 </html>

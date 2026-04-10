@@ -1,178 +1,207 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./projects.css" />
-    <link rel="stylesheet" href="./global.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Digital Marketing</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="header-top-left">
-          <div class="info">
-            <i class="fa-solid fa-phone"></i>
-            <p>+000 000-0000</p>
-          </div>
-          <div class="info">
-            <i class="fa-solid fa-envelope"></i>
-            <p>example24@gmail.com</p>
-          </div>
-          <div class="info">
-            <i class="fa-solid fa-location-pin"></i>
-            <p>No. 8 Adebayo Close, Garki, FCT 900001, Nigeria</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./projects.css" />
+  <link rel="stylesheet" href="./global.css" />
+
+  <link rel="shortcut icon" href="./assets/Untitled25_20260316201052.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Digital Marketing</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+          <p>+000 000-0000</p>
         </div>
-        <div class="header-top-right">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-youtube"></i>
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <p>example24@gmail.com</p>
+        </div>
+        <div class="info">
+          <i class="fa-solid fa-location-pin"></i>
+          <p>No. 8 Adebayo Close, Garki, FCT 900001, Nigeria</p>
         </div>
       </div>
-      <div class="header-bottom">
-        <div class="logo-wrapper">
-          <div class="logo"></div>
-          <h3>Digital Marketing</h3>
-        </div>
-        <ul>
-          <li><a class="nav-link" href="./index.html">Home</a></li>
-          <li><a class="nav-link" href="./services.html">Services</a></li>
-          <li><a class="nav-link" href="./contact.html">Contact</a></li>
-          <li><a class="nav-link" href="./projects.html">Projects</a></li>
-        </ul>
+      <div class="header-top-right">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="logo-wrapper">
+        <div class="logo"></div>
+        <h3>Digital Marketing</h3>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="./">Home</a></li>
+        <li><a class="nav-link" href="./services.html">Services</a></li>
+        <li><a class="nav-link" href="./contact.html">Contact</a></li>
+        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+      </ul>
+
+      <div class="header-bottom-right">
         <button class="header-button">Get A Odjvnsd</button>
-      </div>
-    </header>
-    <section class="box">
-      <div class="work">
-        <p class="logo-Text">
-          <img
-            src="./assets/Untitled25_20260316201052.png"
-            alt="logo"
-            id="logo"
-          />Our Work Proccess
-        </p>
-        <div class="top">
-          <h1>Step-by-Step to Your Growth</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-            odit quibusdam dolor asperiores fugiat rem tenetur dolore vitae,
-            dolores earum ad at
-          </p>
-        </div>
-
-        <div class="team-container" id="teamContainer">
-          <!-- JS will render cards here -->
+  
+        <div class="menu-btn" id="menuBtn" onclick="onclickMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </section>
-    <section class="Text-slider">
-      <div class="ticker-wrapper">
-        <!-- Text-slider -->
-        <div class="ticker-outer">
-          <div class="ticker-track" id="tickerTrack">
-            <!--
+    </div>
+    <div class="header-mobile-nav-wrapper">
+      <div class="header-mobile-nav" id="mobile-nav">
+        <ul>
+          <li><a class="nav-link mobile" href="./">Home</a></li>
+          <li><a class="nav-link mobile" href="./services.html">Services</a></li>
+          <li><a class="nav-link mobile" href="./contact.html">Contact</a></li>
+          <li><a class="nav-link mobile" href="./projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="Text-slider">
+    <div class="ticker-wrapper">
+      <!-- Text-slider -->
+      <div class="ticker-outer">
+        <div class="ticker-track" id="tickerTrack">
+          <!--
           Two identical .ticker-segment copies sit side-by-side.
           The animation scrolls the belt leftward by exactly 50%
           (one copy's width), then loops creating a seamless repeat.
           Which builds both copies so a single source of truth array
           drives the content.
         -->
-            <div class="ticker-content" class="tickerContent"></div>
-          </div>
+          <div class="ticker-content" class="tickerContent"></div>
         </div>
       </div>
-    </section>
-    <section class="second">
+    </div>
+  </section>
+  <section class="box">
+    <div class="work">
       <p class="logo-Text">
-        <img
-          src="./assets/Untitled25_20260316201052.png"
-          alt="logo"
-          id="logo"
-        />Our Work
+        <img src="./assets/Untitled25_20260316201052.png" alt="logo" id="logo" />Our Work Proccess
       </p>
-      <h1>Work That Drives Results</h1>
-      <div class="work-container" id="workContainer">
+      <div class="top">
+        <h1>Step-by-Step to Your Growth</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          odit quibusdam dolor asperiores fugiat rem tenetur dolore vitae,
+          dolores earum ad at
+        </p>
+      </div>
+
+      <div class="team-container" id="teamContainer">
         <!-- JS will render cards here -->
       </div>
-      <button class="buttons">View All Work</button>
-    </section>
-    <footer>
-      <div class="footer-header">
-        <h1>Let's Connect there</h1>
+    </div>
+  </section>
+  <section class="Text-slider">
+    <div class="ticker-wrapper">
+      <!-- Text-slider -->
+      <div class="ticker-outer">
+        <div class="ticker-track" id="tickerTrack">
+          <!--
+          Two identical .ticker-segment copies sit side-by-side.
+          The animation scrolls the belt leftward by exactly 50%
+          (one copy's width), then loops creating a seamless repeat.
+          Which builds both copies so a single source of truth array
+          drives the content.
+        -->
+          <div class="ticker-content" class="tickerContent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second">
+    <p class="logo-Text">
+      <img src="./assets/Untitled25_20260316201052.png" alt="logo" id="logo" />Our Work
+    </p>
+    <h1>Work That Drives Results</h1>
+    <div class="work-container" id="workContainer">
+      <!-- JS will render cards here -->
+    </div>
+    <button class="buttons">View All Work</button>
+  </section>
+  <footer>
+    <div class="footer-header">
+      <h1>Let's Connect there</h1>
+      <a href="./contact.html">
         <button>Contact Us</button>
-      </div>
-      <div class="footer-wrapper">
-        <div class="footer-about">
-          <div class="logo-wrapper">
-            <div class="logo"></div>
-            <h3>Digital Marketing</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-            minus, doloremque neque ipsam porro.
-          </p>
-          <div class="footer-social">
-            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a
-            ><a href=""> <i class="fa-brands fa-x-twitter"></i> </a
-            ><a href=""> <i class="fa-brands fa-instagram"></i> </a
-            ><a href=""> <i class="fa-brands fa-tiktok"></i> </a
-            ><a href=""> <i class="fa-brands fa-youtube"></i> </a>
-          </div>
+      </a>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer-about">
+        <div class="logo-wrapper">
+          <div class="logo"></div>
+          <h3>Digital Marketing</h3>
         </div>
-        <div class="footer-links footer-list">
-          <ul>
-            <li><h3>Navigation</h3></li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-          </ul>
-        </div>
-        <div class="footer-contacts footer-list">
-          <ul>
-            <li><h3>Contacts</h3></li>
-            <li>+000 000-0000</li>
-            <li>example24@gmail.com</li>
-            <li>No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria</li>
-          </ul>
-        </div>
-        <div class="footer-form">
-          <h3>Get the latest information</h3>
-          <form>
-            <input type="email" name="" id="" placeholder="Email Address" />
-            <button type="submit">
-              <i class="fa-solid fa-paper-plane floating"></i>
-            </button>
-          </form>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+          minus, doloremque neque ipsam porro.
+        </p>
+        <div class="footer-social">
+          <a href=""> <i class="fa-brands fa-facebook-f"></i> </a><a href=""> <i class="fa-brands fa-x-twitter"></i>
+          </a><a href=""> <i class="fa-brands fa-instagram"></i> </a><a href=""> <i class="fa-brands fa-tiktok"></i>
+          </a><a href=""> <i class="fa-brands fa-youtube"></i> </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <p>Copyright @2025 Digital Marketing Company. All Rights Reserved</p>
-        </div>
-        <div class="footer-bottom-right">
-          <p>User Terms & Conditions | Privacy Policy</p>
-        </div>
+      <div class="footer-links footer-list">
+        <ul>
+          <li>
+            <h3>Navigation</h3>
+          </li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+        </ul>
       </div>
-    </footer>
-    <script src="./projects.js"></script>
-    <script src="./index.js"></script>
-  </body>
+      <div class="footer-contacts footer-list">
+        <ul>
+          <li>
+            <h3>Contacts</h3>
+          </li>
+          <li>+000 000-0000</li>
+          <li>example24@gmail.com</li>
+          <li>No. 8 Adebayo Close, Garki, Abuja, FCT 900001, Nigeria</li>
+        </ul>
+      </div>
+      <div class="footer-form">
+        <h3>Get the latest information</h3>
+        <form>
+          <input type="email" name="" id="" placeholder="Email Address" />
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane floating"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>Copyright @2025 Digital Marketing Company. All Rights Reserved</p>
+      </div>
+      <div class="footer-bottom-right">
+        <p>User Terms & Conditions | Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./projects.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
